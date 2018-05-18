@@ -10,9 +10,9 @@ while num != 0 :
 			caindo = True
 		for j in range(1,num +1):
 			if j != num :
-				print("%3d " %x, end = "")
-			elif j == num :
-				print("%3d" %x)
+				print("{:>3}".format(x), end = " ")
+			else :
+				print("{:>3}".format(x))
 			if x == 1:
 				caindo = False
 			if caindo :
